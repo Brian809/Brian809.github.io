@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+        .parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 4; }
+.div2 { grid-area: 2 / 1 / 4 / 4; }
+.div3 { grid-area: 4 / 1 / 6 / 4; }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="div1" style="background: rgb(200, 213, 236);">
+            <h1>Brian233的首页qwq!</h1>
+            <p style="text-align: center;"><a href='index.html'><img src='home.png'>首页</a></p>
+            <p style='text-align: center;'><a href='#'><img src='help.png'>关于</a></p>
+            <h2><a href='#'><img src='github.png'>使用github来关注我！</a></h2>
+            <h2><a href='#'><img src='bilibili.png'>使用b站来关注我！</a></h2>
+            <h2><a href='#'><img src='kada.png'>使用kada来关注我！</a></h2>
+            <div class='library'>
+                <h3>目录</h3>
+                <a href='#yos'>1.YOS项目</a>
+        </div>
+        <div class="div2"> 
+            <h1>欢迎来到Brian233的首页!</h1>
+            <p>下面是我的Scratch作品</p>
+        <div id='yos'><p>ＹＯＳ</p>
+            <a href='https://kada.163.com/project/7483703-4314895.htm' target="_blank"><img src='yos.png'><p><i>展示图片，点击可以跳转到作品原链接!</i></p></a>
+        </div>
+        <div id='funrun'><p>卡搭跑酷</p>
+            <a href='https://kada.163.com/project/7546334-4314895.htm' target="_blank"><img src='funrun.png'><p><i>展示图片，点击可以跳转到作品原链接!</i></p></a>
+        </div>
+        <div id='text'><p>正在制作：迷失探险文字游戏</p>
+            <a href='#' target="_blank"><img src='text.png'><p><i>未做完......</i></p></a>
+        </div>
+        </div>
+        <div class="div3">
+            <h1>到底了！！以后会考虑更新Python！</h1>
+        </div>
+    </div>
+    
+</body>
+</html>
