@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新CSS主页</title>
+    <style>.container {
+        /* Used to position the mega menu */
+        position: relative;
+    }
+    
+    .container__trigger:hover .container__content {
+        /* Show the mega menu when hovering the trigger item */
+        display: block;
+    }
+    
+    .container__content {
+        /* Border */
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        margin-top: -1px;
+    
+        /* Hidden by default */
+        display: none;
+    
+        /* Absolute position */
+        left: 0px;
+        position: absolute;
+        top: 100%;
+    
+        /* Take full width */
+        width: 100%;
+    
+        /* Displayed on top of other elements */
+        background: rgb(83, 166, 199);
+        z-index: 9999;
+    }</style>
+</head>
+<body style="background:darkcyan">
+    <div class="container">
+        <!-- Item -->
+        <h1>Brian的新CSS主页</h1>
+    
+        <!-- An item that triggers displaying the mega menu -->
+        <div class="container__trigger">
+            <!-- The trigger item's content -->
+            <div><i>导航</i></div>
+    
+            <!-- Mega menu -->
+            <div class="container__content">
+                <a href='index.html'><img src='home.png'>之前的index</a>
+                <a href='python.html'><img src='py.png'>python新的导航区</a>
+                <a href='sc.html'><img src="sc.png">Scratch作品区</a>
+                <a href='star.html'><img src="backstar.png">关注一下</a>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
